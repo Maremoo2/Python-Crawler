@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Playwright browser data and authenticated sessions
+browser_profile/
+licenseverse_state*.json
+
+# Generated crawl output and reports
+KnowledgeBase/
+LicenseVerse
+LicenseVerse.txt
+LicenseVerse_clean*.txt
+LicenseVerse_playwright.txt
+crawl_count_output.txt
+coverage_report.md
+errors.txt
+manifest.jsonl
+onprem_toc_coverage.md
+skipped_urls.txt
+toc_gap_report.md
+unmapped_urls.txt
+visited_urls.txt
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db

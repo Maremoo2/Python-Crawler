@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "run-crawl-count",
+			"type": "shell",
+			"command": "py.exe",
+			"args": [
+				"crawl_count.py"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "qa-generate-manifest",
+			"type": "shell",
+			"command": "py.exe",
+			"args": [
+				"generate_manifest.py"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "qa-generate-toc-gap-report",
+			"type": "shell",
+			"command": "py.exe",
+			"args": [
+				"generate_toc_gap_report.py"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "QA: Full Post-Crawl Check",
+			"dependsOn": [
+				"qa-generate-manifest",
+				"qa-generate-toc-gap-report"
+			],
+			"dependsOrder": "sequence",
+			"problemMatcher": []
+		}
+	]
+}
